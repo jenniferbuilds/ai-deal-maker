@@ -1,0 +1,11 @@
+[project]
+name = "negotiation-agent"
+version = "0.1.0"
+description = "RL-trained Craigslist buyer agent on River (Own Your Intelligence hackathon)"
+requires-python = ">=3.12"
+dependencies = [
+    "river-client==0.12.0",
+]
+
+[tool.uv]
+package = false

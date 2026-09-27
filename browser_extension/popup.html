@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Deal Maker</title>
+    <style>
+        body {
+            width: 350px;
+            padding: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        
+        h1 {
+            font-size: 18px;
+            margin: 0 0 15px 0;
+            color: #1a73e8;
+        }
+        
+        .status {
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .item-info {
+            background: #e8f0fe;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .item-info h3 {
+            margin: 0 0 8px 0;
+            font-size: 14px;
+        }
+        
+        .item-info p {
+            margin: 4px 0;
+            font-size: 13px;
+        }
+        
+        label {
+            display: block;
+            margin: 8px 0 4px 0;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 10px 0;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        button.primary {
+            background: #1a73e8;
+            color: white;
+        }
+        
+        button.primary:hover {
+            background: #1557b0;
+        }
+        
+        button.secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+        
+        button.secondary:hover {
+            background: #e0e0e0;
+        }
+        
+        .settings {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 AI Deal Maker</h1>
+    
+    <div class="status" id="status">
+        Ready to negotiate
+    </div>
+    
+    <div class="item-info" id="item-info">
+        <h3>Current Item</h3>
+        <p><strong>Title:</strong> <span id="item-title">Not detected</span></p>
+        <p><strong>Price:</strong> <span id="item-price">$0</span></p>
+    </div>
+    
+    <label for="max-price">Your Maximum Price ($)</label>
+    <input type="number" id="max-price" placeholder="Enter your max">
+    
+    <label for="target-price">Target Price ($) <small>(optional)</small></label>
+    <input type="number" id="target-price" placeholder="What you want to pay">
+    
+    <div class="checkbox-group">
+        <input type="checkbox" id="auto-mode">
+        <label for="auto-mode" style="margin: 0;">Auto-negotiate (no approval needed)</label>
+    </div>
+    
+    <button class="primary" id="start-btn">Start Negotiation</button>
+    <button class="secondary" id="stop-btn">Stop</button>
+    <button class="secondary" id="suggest-btn">Suggest Next Message</button>
+    
+    <div class="settings">
+        <button class="secondary" id="settings-btn">⚙️ Settings</button>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

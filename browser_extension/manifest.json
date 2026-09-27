@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "AI Deal Maker",
+  "version": "1.0",
+  "description": "AI-powered negotiation assistant for online marketplaces",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.facebook.com/marketplace/*",
+    "https://craigslist.org/*",
+    "https://offerup.com/*",
+    "https://poshmark.com/*",
+    "https://www.ebay.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/marketplace/*",
+        "https://craigslist.org/*",
+        "https://offerup.com/*",
+        "https://poshmark.com/*",
+        "https://www.ebay.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

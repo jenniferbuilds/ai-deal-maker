@@ -1,0 +1,40 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+================================================================================
+🤖 NEGOTIATION AGENT TEST & DEMONSTRATION
+================================================================================
+
+📋 TEST SCENARIO
+Item: * MODERN Contemporary White Queen Leather Bed Upholstery Tufted Italia
+Category: furniture
+Listing Price: $349
+Buyer Target: $244
+Secret Seller Floor: $222 (agent doesn't know this)
+Description: This modern VERY BEAUTIFUL Queen bed is inspired by Italian design and has an Asian rubberwood construction. A white, vinyl upholstery with a tall, sq...
+
+🔧 Initializing negotiation agent...
+✅ Using trained checkpoint: river://1a80c87a-9106-4968-a0a8-817658bb4eb8/sampl...
+
+================================================================================
+🎭 NEGOTIATION SIMULATION
+================================================================================
+
+SELLER: Hi! I'm selling * MODERN Contemporary White Queen Leather Bed Upholstery Tufted Italia. Asking $349.
+BUYER: 
+       [ACTION: OFFER $20]
+SELLER: I can't go that low. Best I can do is $296.65.
+BUYER: 
+       [ACTION: OFFER $30]
+SELLER: I can't go that low. Best I can do is $255.30.
+BUYER: 
+       [ACTION: OFFER $40]
+SELLER: I can't go that low. Best I can do is $222.
+BUYER: 
+       [ACTION: OFFER $50]
+BUYER: 
+       [ACTION: OFFER $60]
+BUYER: 
+       [ACTION: OFFER $75]
+
+================================================================================
+⏱️  OUT OF TURNS - No deal reached

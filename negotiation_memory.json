@@ -1,0 +1,14 @@
+[
+  {
+    "category": "electronics",
+    "listing_price": 200,
+    "final_price": 160,
+    "tactics": [
+      "started low at $120",
+      "incremented by $20",
+      "mentioned competitor pricing"
+    ],
+    "success": true,
+    "timestamp": "2026-09-27T15:59:22.882283"
+  }
+]
