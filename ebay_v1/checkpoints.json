@@ -1,0 +1,5 @@
+{
+  "10": "river://15bd5222-f2a4-4a94-a48a-4ac3a8757dc6/sampler_weights/step_000010_infer",
+  "latest": "river://15bd5222-f2a4-4a94-a48a-4ac3a8757dc6/sampler_weights/step_000020_infer",
+  "20": "river://15bd5222-f2a4-4a94-a48a-4ac3a8757dc6/sampler_weights/step_000020_infer"
+}

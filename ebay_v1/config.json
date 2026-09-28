@@ -1,0 +1,15 @@
+{
+  "run_dir": "runs/ebay_v1",
+  "base_model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "steps": 20,
+  "scenarios_per_step": 4,
+  "group_size": 8,
+  "lr": 4e-05,
+  "rank": 16,
+  "max_turns": 6,
+  "max_tokens": 160,
+  "voice": "template",
+  "ckpt_every": 10,
+  "seed": 0,
+  "resume_from": null
+}
