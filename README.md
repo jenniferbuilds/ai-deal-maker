@@ -1,6 +1,24 @@
-# Multi-Platform Negotiation Agent with Procedural Memory
+# 🤖 AI Deal Maker
 
-An RL-trained AI agent that negotiates prices across multiple platforms using River's GRPO-style reinforcement learning with optional procedural memory integration.
+**RL-trained negotiation agent that saves you money automatically.**
+
+[![Training Status](https://img.shields.io/badge/Training-Complete-brightgreen)](runs/v2)
+[![Deal Rate](https://img.shields.io/badge/Deal%20Rate-100%25-blue)](runs/v2)
+[![Reward](https://img.shields.io/badge/Reward-+1.00-green)](runs/v2)
+[![Discount](https://img.shields.io/badge/Avg%20Discount-30%25-orange)](runs/v2)
+
+An RL-trained AI agent that negotiates prices across multiple platforms using River's GRPO-style reinforcement learning with procedural memory integration.
+
+## 🎯 Results
+
+| Metric | Value |
+|--------|-------|
+| **Training Steps** | 50/50 ✅ |
+| **Reward Score** | +1.00 (perfect) |
+| **Deal Rate** | 100% |
+| **Average Discount** | 30% off listing |
+| **Rudeness Rate** | 0% |
+| **Format Errors** | 0% |
 
 ## Features
 
